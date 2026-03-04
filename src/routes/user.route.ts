@@ -4,7 +4,6 @@ import { userView } from "../views/user.view";
 import { htmlResponse, redirect } from "../utils/response";
 
 export const userRoutes = new Elysia()
-
   .get("/", () => {
     const users = userService.getAllUsers();
     return htmlResponse(userView(users));

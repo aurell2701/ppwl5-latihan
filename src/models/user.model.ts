@@ -1,5 +1,3 @@
-import type { User } from "../types/user.type";
-
 /* =========================
    MODEL (Issue: Langsung di index)
    Tugas:
@@ -7,7 +5,7 @@ import type { User } from "../types/user.type";
     2. gunakan export class ...
     3. Property id jadikan opsional
 ========================= */
-
+import type { User } from "../types/user.type";
 export class UserModel implements User {
   id?: number;
   name: string;

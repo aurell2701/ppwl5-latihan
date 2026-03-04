@@ -13,7 +13,6 @@ import type { User } from "../types/user.type";
 export const userRepository = {
   findAll(): UserModel[] {
     const rows = db.query("SELECT id, name, role FROM users").all() as User[];
-
     return rows.map(user => new UserModel(user));
   },
   create(user: User) {
